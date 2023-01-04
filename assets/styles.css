@@ -1,0 +1,56 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+body {
+  z-index: -1;
+  position: relative;
+  padding: 5vh;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 60vw;
+  font-family: cursive;
+}
+
+.hero {
+  background-image: url(https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1159&q=80);
+  background-size: cover;
+  min-height: 45vh;
+
+  width: 100%;
+}
+
+.shortText {
+  width: 100%;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.btn {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.lightbox {
+  display: inline-block;
+  z-index: 99;
+  position: fixed;
+  opacity: 0.9;
+  height: 100vh;
+  width: 100vw;
+}
