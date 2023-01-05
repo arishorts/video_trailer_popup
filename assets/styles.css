@@ -11,8 +11,6 @@ html {
 
 body {
   z-index: -1;
-  position: relative;
-  padding: 5vh;
   height: 100vh;
   background-color: black;
   color: white;
@@ -23,34 +21,83 @@ body {
 }
 
 .wrapper {
-  width: 60vw;
+  max-width: 600px;
   font-family: cursive;
 }
 
 .hero {
   background-image: url(https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1159&q=80);
   background-size: cover;
-  min-height: 45vh;
-
-  width: 100%;
+  min-height: 50vh;
+  margin-bottom: 15px;
+  max-width: 100%;
+  border-radius: 10px;
 }
 
 .shortText {
   width: 100%;
   font-size: 2rem;
   line-height: 2rem;
+  margin: 15px 0;
+}
+.wrapper h1 {
+  font-weight: 500;
+  font-size: 4em;
 }
 
 .btn {
   font-size: 2rem;
   padding: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  align-self: flex-start;
+}
+
+.btn:hover {
+  background-color: orange;
+  box-shadow: 5px 5px 0 rgba(rgb(255, 255, 255), 0.1);
 }
 
 .lightbox {
-  display: inline-block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
   z-index: 99;
   position: fixed;
-  opacity: 0.9;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.7s;
+}
+
+.active {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.7s;
+}
+
+video {
+  position: relative;
+  max-width: 900px;
+  outline: none;
+}
+
+.close-icon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  video {
+    max-width: 90%;
+  }
 }

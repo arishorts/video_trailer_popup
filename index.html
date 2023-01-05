@@ -6,15 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/normalize.css" />
     <link rel="stylesheet" href="./assets/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/65eb5ab099.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
   </head>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+
   <body>
     <script src="./index.js"></script>
     <div class="wrapper">
@@ -30,10 +28,9 @@
       </p>
       <input class="btn" type="button" value="Watch now" />
     </div>
-    <div class="lightbox">
-      <video src="./assets/trailer.mp4" controls>
-        <i class="fa-solid fa-circle-xmark-10x"></i>
-      </video>
+    <div class="lightbox active">
+      <video src="./assets/trailer.mp4" controls></video
+      ><i class="close-icon fa-solid fa-circle-xmark fa-3x"></i>
     </div>
   </body>
 </html>
